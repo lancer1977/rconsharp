@@ -3,17 +3,17 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageIcon>logo.png</PackageIcon>
-    <RepositoryUrl>https://github.com/stefanodriussi/rconsharp</RepositoryUrl>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <Version>2.0.1</Version>
-    <Authors>Stefano Driussi</Authors>
-    <Description>rconsharp is a Valve RCON protocol implementation for netstandard</Description>
+    <RepositoryUrl>https://github.com/dochoss/rconsharp</RepositoryUrl>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <Version>3.0.1</Version>
+    <Authors>Bo Clifton, Stefano Driussi</Authors>
+    <Description>rconsharp is a Valve RCON protocol implementation for .NET 8. Updated from original work by Stefano Druissi.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/stefanodriussi/rconsharp</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/dochoss/rconsharp</PackageProjectUrl>
     <PackageTags>rcon</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.IO.Pipelines" Version="7.0.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\LICENSE.txt">
