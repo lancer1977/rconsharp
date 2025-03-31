@@ -1,25 +1,31 @@
-name: netstandard
+name: Run Tests
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
   pull_request:
-    branches: [ master ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 3.1.101
+        dotnet-version: '8.0.x'
+
     - name: Install dependencies
-      run: dotnet restore ./RconSharp/RconSharp.Tests
+      run: dotnet restore
+
     - name: Build
-      run: dotnet build ./RconSharp/RconSharp.Tests --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
+
     - name: Test
-      run: dotnet test ./RconSharp/RconSharp.Tests --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal
