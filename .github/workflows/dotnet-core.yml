@@ -23,9 +23,12 @@ jobs:
 
     - name: Install dependencies
       run: dotnet restore
+      working-directory: RconSharp
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      working-directory: RconSharp
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+      working-directory: RconSharp
