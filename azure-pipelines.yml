@@ -1,0 +1,39 @@
+# Starter pipeline
+name: 3.0.0.$(rev:r)
+variables: 
+- name: Project.Path
+  value: '**/RconSharp.csproj'
+- name: BuildConfiguration
+  value: Release
+trigger:
+  branches:
+    include:
+    - refs/heads/main
+  paths:
+    include:
+    - RconSharp
+
+jobs:
+- job: Phase_1 
+  cancelTimeoutInMinutes: 1
+  pool:
+    name: Default
+  steps:
+  - checkout: self
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'restore'
+      projects: '$(Project.Path)'
+      feedsToUse: 'select'
+      vstsFeed: '015fc12f-cd63-4ab4-8d6a-dc889e53bf70'
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'pack'
+      versioningScheme: 'byBuildNumber'
+      arguments: '-c $(BuildConfiguration) --no-restore' 
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'push'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: '015fc12f-cd63-4ab4-8d6a-dc889e53bf70'
