@@ -5,15 +5,15 @@
 /// </summary>
 public enum PacketType
 {
-  // SERVERDATA_RESPONSE_VALUE
-  Response = 0,
+    // SERVERDATA_RESPONSE_VALUE
+    Response = 0,
 
-  // SERVERDATA_AUTH_RESPONSE
-  AuthResponse = 2,
+    // SERVERDATA_AUTH_RESPONSE
+    AuthResponse = 2,
 
-  // SERVERDATA_EXECCOMMAND
-  ExecCommand = 2,
+    // SERVERDATA_EXECCOMMAND
+    ExecCommand = 2,
 
-  // SERVERDATA_AUTH
-  Auth = 3
+    // SERVERDATA_AUTH
+    Auth = 3
 }
