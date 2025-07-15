@@ -14,9 +14,6 @@ namespace RconSharp;
 /// </summary>
 public class RconClient
 {
-  public string Host { get; private set; }
-  public int Port { get; private set; }
-
   public event Action ConnectionClosed;
 
   private readonly IChannel Channel;
@@ -36,8 +33,7 @@ public class RconClient
   /// <param name="channel">a NetworkSocket implementation</param>
   private RconClient(IChannel channel)
   {
-    Channel = channel 
-      ?? throw new NullReferenceException("channel parameter must be an instance of a class implementing INetworkSocket interface");
+    Channel = channel ?? throw new NullReferenceException("channel parameter must be an instance of a class implementing INetworkSocket interface");
     Encoding = Encoding.UTF8;
   }
 
