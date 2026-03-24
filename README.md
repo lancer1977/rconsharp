@@ -87,3 +87,9 @@ This code is distributed under the very permissive MIT License but, if you use i
 Thanks to 
 * [Eucalyp](https://thenounproject.com/eucalyp) for the icon used in `rconsharp` logo
 * [Universidade de Brasilia](http://www.marca.unb.br/introducao.php) for [unb_pro_black](http://www.marca.unb.br/fontesunb.php) font
+
+
+## 📖 Documentation
+Detailed documentation can be found in the following sections:
+- [Feature Index](./docs/features/README.md)
+- [Core Capabilities](./docs/features/core-capabilities.md)
