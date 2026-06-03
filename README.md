@@ -4,6 +4,15 @@
 
 rconsharp is a [Valve RCON](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol) protocol implementation for `netstandard`
 
+## Tags
+
+- rconsharp
+- docs
+- dotnet
+- auth
+- ui
+- game
+
 ## Games Support
 
 In theory all servers claiming to implement Valve's RCON protocol should be supported.
