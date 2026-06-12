@@ -89,7 +89,7 @@ The good news is that the API has been simplified, resulting in a fairly easy po
 
 ## Licensing
 
-This code is distributed under the very permissive MIT License but, if you use it, you might consider referring to the repository. Please refer to [LICENSE](./LICENSE) file for the complete license description.
+This code is distributed under the very permissive MIT License but, if you use it, you might consider referring to the repository. Please refer to the project license for the complete license description.
 
 ## Credits
 
@@ -100,5 +100,7 @@ Thanks to
 
 ## 📖 Documentation
 Detailed documentation can be found in the following sections:
+- [Docs README](./docs/README.md)
 - [Feature Index](./docs/features/README.md)
 - [Core Capabilities](./docs/features/core-capabilities.md)
+- [Roadmap Index](./docs/roadmaps/README.md)
