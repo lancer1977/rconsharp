@@ -15,10 +15,17 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+.vscode/
+.idea/
+.vs/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
 
 #NUNIT
 *.VisualState.xml
