@@ -1,17 +1,28 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: bug
-assignees: stefanodriussi
-
+about: Report a bug
+title: "[Bug]: "
+labels: ["type:bug"]
+assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## What happened?
 
-**Game Server**
-The name and possibly version of the Game Server you're connecting to
+## Expected behavior
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Steps to reproduce
+
+1.
+2.
+3.
+
+## Environment
+
+- OS:
+- Related support issue, if any:
+
+## Logs or screenshots
+
+## Safety Impact
+
+Could this expose shell access, session output, credentials, tokens, or private paths?
