@@ -11,6 +11,7 @@
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <PackageProjectUrl>https://github.com/stefanodriussi/rconsharp</PackageProjectUrl>
         <PackageTags>rcon</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="System.IO.Pipelines" Version="10.0.8" />
@@ -21,6 +22,10 @@
             <PackagePath></PackagePath>
         </None>
         <None Include="..\..\res\logo.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\README.md">
             <Pack>True</Pack>
             <PackagePath></PackagePath>
         </None>
