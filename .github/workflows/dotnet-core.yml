@@ -3,6 +3,10 @@ name: netstandard
 on:
   workflow_dispatch:
 
+concurrency:
+  group: rconsharp-manual-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
