@@ -24,7 +24,6 @@ Use it when you need a repeatable starting point for:
 - `portainer-stack.yml` — reusable Portainer/Traefik stack skeleton
 - `docker-compose.local.yml` — reusable local smoke compose for build-and-run validation
 - `nginx/` — Nginx front-door variant for static-first frontends plus app backends
-- `game-server/` — reusable game-stack lifecycle helper for fresh runtime trees, apply, attach, and publish
 
 ## Placeholder conventions
 
